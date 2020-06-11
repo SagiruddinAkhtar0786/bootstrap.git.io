@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* img{
+    width: 64px;
+    height: 64px;
+} */
+
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color:#505962 ;
+}
+
+/* .offset:before{
+    height: 4rem;
+    margin-top: -4rem;
+    content: "";
+    display: block;
+} */
+/*********************************** navbar syle******************************* */
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img{
+    height: 2.5rem;
+}
+
+.navbar-nav li{
+    padding-right: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: 0.8rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover{
+    color: cyan;
+}
+
+/* ********************slider****************************** */
+.carousel-item{
+    
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+.carousel-caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+  
+}
+.carousel-caption h3{
+    font-size: 2rem;
+   
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+  
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+
+}
+
+.jumbotron {
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    margin-bottom: 0;
+}
+
+
+h3.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+   /* padding-bottom: 1.5rem;  */
+}
+.heading-underline{
+    width: 5rem;
+    height: .2rem;
+    background-color: cyan;
+    margin: 2rem auto;
+}
+
+/* portfolio image */
+
+.portfolio img{
+    max-width: 100%;
+    transition: transform 0.8s ease;
+
+}
+.portfolio{
+    overflow: hidden;
+}
+.portfolio img:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.row.no-padding [class*=col-]
+{
+    padding: 0;
+}
+/* *****************************COURSE SECTION**************************** */
+.narrow{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.btn-md{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+/* **********************team*************************** */
+
+.card{
+    margin: 2rem;
+}
+.col-md-6{
+    /* width: 50%;
+    height: 50%; */
+}
+
+/* contact */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+footer .imag{
+
+    width: 100px;
+    margin-top: 100px;
+}
+footer p{
+    margin-top: 50px;
+}
+
+strong{
+    font-size: 2.5rem;
+    color: springgreen;
+}
+footer a{
+    color: white;
+    font-size: 3rem;
+}
+hr{
+    border-top: .2rem solid cyan;
+    color: white;
+}
+.socket p{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media queries */
+@media (max-width:767px)
+{
+    .carousel-caption {
+        top: 30%;
+    }
+    .carousel-caption h1{
+        font-size: 2rem;
+    
+        letter-spacing: .2rem;
+       
+        padding-bottom: .5rem;
+      
+    }
+    .carousel-caption h3{
+        font-size: 1rem;
+       
+        
+        padding-bottom: 1rem;
+      
+    }
+    .btn-lg{
+       
+        font-size: 0.8rem;
+    
+    } 
+}
